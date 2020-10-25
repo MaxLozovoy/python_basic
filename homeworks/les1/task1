@@ -1,0 +1,10 @@
+#var_1 = 25
+#var_2 = 'good day'
+#print(var_1)
+#print(var_2)
+
+user_name = input('Как Вас зовут?\n>>>')
+shoes_size = input('Какой у Вас размер обуви?\n>>>')
+family = input('Ваше семейное положение\n>>>')
+
+print('имя - {0},\nРазмер обуви -  {1},\nСемейное положение - {2}.'.format(user_name, shoes_size, family))
