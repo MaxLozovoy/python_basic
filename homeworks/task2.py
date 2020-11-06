@@ -6,10 +6,9 @@
 
 """
 my_list = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-#первое число исходного списка попадает в результат, если в списке первое число меньше второго,
-# то не попадает... почему разобраться не смог.
 
-new_list = [i for num, i in enumerate(my_list) if my_list[num-1] < my_list[num]]
+
+new_list = [i for num, i in enumerate(my_list) if num and i > my_list[num-1]]
 
 print(f'Исходный список {my_list}')
 print(f'Результат {new_list}')

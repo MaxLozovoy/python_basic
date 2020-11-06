@@ -7,3 +7,17 @@
 
 """
 
+def fibo_gen(n):
+    prev = 1
+    result = 1
+    while n:
+        yield result
+        prev += 1
+        n -= 1
+        # это обратный счетчик для числа n (аргумент функции) для того что бы цикл закончился как только он преберет все значения от 4 до 1
+
+        result *= prev
+
+
+for idx, itm in enumerate(fibo_gen(4), 1):
+    print(idx, itm)
