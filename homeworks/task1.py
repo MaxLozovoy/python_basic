@@ -10,12 +10,12 @@ while True:
     line = input('Введите строку \n>>>')
     if line == ' ':
         break
-    my_file.write(line)
+    my_file.write(line + '\n')
 
 my_file.close()
 
 my_file = open('file.txt', 'r', encoding='UTF-')
-content = my_file.readlines()
+content = my_file.read()
 print(content)
 
 my_file.close()
